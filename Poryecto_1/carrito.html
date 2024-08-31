@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <main>
+        <section id="productos-disponibles">
+            <h2>Lista de Productos</h2>
+            <div class="producto" ondragstart="drag(event)" draggable="true" id="producto1">
+                <img src="producto1.jpg" alt="Producto 1">
+                <p>Producto 1</p>
+                <p>Precio: $10</p>
+            </div>
+            <div class="producto" ondragstart="drag(event)" draggable="true" id="producto2">
+                <img src="producto2.jpg" alt="Producto 2">
+                <p>Producto 2</p>
+                <p>Precio: $15</p>
+            </div>
+            <div class="producto" ondragstart="drag(event)" draggable="true" id="producto3">
+                <img src="producto3.jpg" alt="Producto 3">
+                <p>Producto 3</p>
+                <p>Precio: $20</p>
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Tu Carrito</h2>
+            <div id="cesta" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Arrastra los productos aquí</p>
+            </div>
+            <div id="total">
+                <p>Total: $<span id="totalPrecio">0</span></p>
+            </div>
+        </section>
+
+        <section id="ubicacion">
+            <h2>País de Compra</h2>
+            <button onclick="obtenerUbicacion()">Mostrar mi ubicación</button>
+            <p id="pais"></p>
+        </section>
+
+        <nav>
+            <a href="index.html">Regresar a Inicio</a>
+            <a href="confirmacion.html">Confirmar Compra</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>© 2024 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

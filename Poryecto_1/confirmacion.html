@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Compra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Confirmación de Compra</h1>
+    </header>
+
+    <main>
+        <section id="resumen-compra">
+            <h2>Resumen de tu Compra</h2>
+            <div id="resumenCarrito">
+                <!-- Los productos del carrito se mostrarán aquí -->
+            </div>
+            <div id="totalFinal">
+                <p>Total Final: $<span id="totalPrecioFinal">0</span></p>
+            </div>
+        </section>
+
+        <section id="acciones">
+            <h2>Modificar tu Compra</h2>
+            <button onclick="modificarCompra()">Modificar</button>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </section>
+
+        <nav>
+            <a href="index.html">Regresar a Inicio</a>
+            <a href="carrito.html">Volver al Carrito</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>© 2024 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
